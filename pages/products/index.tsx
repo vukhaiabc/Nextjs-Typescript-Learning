@@ -37,7 +37,7 @@ export default function Products(props: ProductsProps) {
   );
 }
 export async function getStaticProps(){
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts?_page=1');
   const data = await response.json();
   // console.log(data)
   return {
